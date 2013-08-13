@@ -1,0 +1,5 @@
+qtquickcontrols-opensource-src (5.1.0-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #697509).
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 10 Jul 2013 08:53:45 +0000
