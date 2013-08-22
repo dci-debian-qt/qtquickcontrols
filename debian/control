@@ -18,7 +18,6 @@ Standards-Version: 3.9.4
 Homepage: http://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtquickcontrols.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtquickcontrols.git;a=summary
-Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/qtquickcontrols-opensource-src
 
 Package: libqt5qml-quickcontrols
 Architecture: any
