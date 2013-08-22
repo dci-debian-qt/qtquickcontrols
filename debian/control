@@ -28,7 +28,8 @@ Description: Qt 5 Quick Controls module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- QtQuickControls is XXX.
+ The Qt Quick Controls module provides a set of controls that can be used to
+ build complete interfaces in Qt Quick.
 
 Package: qtdeclarative5-quicklayouts-plugin
 Section: libdevel
@@ -38,6 +39,5 @@ Description: Qt 5 Quick Controls development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
  .
- This package contains the header development files used for building Qt 5
+ This package contains the development files used for building Qt 5
  applications using QtQuickControls library.
-
