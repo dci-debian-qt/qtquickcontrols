@@ -1,10 +1,9 @@
-qtquickcontrols-opensource-src (5.1.0-2) UNRELEASED; urgency=low
+qtquickcontrols-opensource-src (5.1.0-2) unstable; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add missing copyright holder.
   * Simplify debian/copyright.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Aug 2013 15:36:05 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 23 Aug 2013 15:43:02 -0300
 
 qtquickcontrols-opensource-src (5.1.0-1) unstable; urgency=low
 
