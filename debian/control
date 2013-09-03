@@ -34,7 +34,7 @@ Description: Qt 5 Quick Controls module
 Package: qtdeclarative5-quicklayouts-plugin
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt5qml-quickcontrols (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Description: Qt 5 Quick Controls development files
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
