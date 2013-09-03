@@ -23,7 +23,7 @@ Copyright: 2012-2013 Digia Plc and/or its subsidiary(-ies)
 License: BSD-3-clause
 
 Files: src/quickcontrols/parser/qquerytransformparser.cpp
-Copyright: 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc
+Copyright: 1984, 1989, 1990, 2000-2006 Free Software Foundation, Inc
            2012 Digia Plc and/or its subsidiary(-ies).
 License: LGPL-2.1 with Digia Qt LGPL Exception 1.1
 
