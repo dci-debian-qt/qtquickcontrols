@@ -1,3 +1,7 @@
+qtquickcontrols-opensource-src (5.1.0-3) UNRELEASED; urgency=low
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 03 Sep 2013 11:32:59 -0300
+
 qtquickcontrols-opensource-src (5.1.0-2) unstable; urgency=low
 
   * Add missing copyright holder.
