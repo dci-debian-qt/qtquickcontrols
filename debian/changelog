@@ -9,6 +9,8 @@ qtquickcontrols-opensource-src (5.1.1-2) UNRELEASED; urgency=low
     - Rename .install and .lintian-override files.
     - Make qtdeclarative5-quicklayouts-plugin depend on the new package.
   * Fix the description of the layouts plugin package.
+  * The Controls module depends on the Layouts one. Swap the dependencies
+    (Closes: #725161).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Oct 2013 19:08:42 -0300
 

@@ -23,7 +23,8 @@ Package: qtdeclarative5-controls-plugin
 Architecture: any
 Multi-Arch: same
 Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
-Depends: libqt5qml5, ${misc:Depends}, ${shlibs:Depends}
+Depends: libqt5qml5, qtdeclarative5-quicklayouts-plugin (= ${binary:Version}),
+ ${misc:Depends}, ${shlibs:Depends}
 Breaks: libqt5qml-quickcontrols (<< 5.1.1-2~)
 Replaces: libqt5qml-quickcontrols (<< 5.1.1-2~)
 Description: Qt 5 Quick Controls module plugin
@@ -46,8 +47,7 @@ Description: transitional dummy package for Qt 5 Quick Controls module plugin
 Package: qtdeclarative5-quicklayouts-plugin
 Section: libdevel
 Architecture: any
-Depends: qtdeclarative5-controls-plugin (= ${binary:Version}),
-         ${misc:Depends},
+Depends: ${misc:Depends},
          ${shlibs:Depends}
 Description: Qt 5 Quick Layouts module plugin
  Qt is a cross-platform C++ application framework. Qt's primary feature
