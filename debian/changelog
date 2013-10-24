@@ -1,5 +1,13 @@
 qtquickcontrols-opensource-src (5.1.1-2) UNRELEASED; urgency=low
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Rename libqt5qml-quickcontrols to qtdeclarative5-controls-plugin to
+    maintain consistency with other packages.
+    - Create a dummy package libqt5qml-quickcontrols depending on
+      qtdeclarative5-controls-plugin.
+    - Add proper Breaks+Replaces to qtdeclarative5-controls-plugin.
+    - Rename .install and .lintian-override files.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Oct 2013 19:08:42 -0300
 
 qtquickcontrols-opensource-src (5.1.1-1) unstable; urgency=low
