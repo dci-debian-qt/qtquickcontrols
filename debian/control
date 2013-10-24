@@ -46,6 +46,7 @@ Description: transitional dummy package for Qt 5 Quick Controls module plugin
 
 Package: qtdeclarative5-quicklayouts-plugin
 Section: libdevel
+Multi-Arch: same
 Architecture: any
 Depends: ${misc:Depends},
          ${shlibs:Depends}
