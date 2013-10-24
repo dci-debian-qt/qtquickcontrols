@@ -46,7 +46,7 @@ Description: transitional dummy package for Qt 5 Quick Controls module plugin
 Package: qtdeclarative5-quicklayouts-plugin
 Section: libdevel
 Architecture: any
-Depends: libqt5qml-quickcontrols (= ${binary:Version}),
+Depends: qtdeclarative5-controls-plugin (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Qt 5 Quick Controls development files

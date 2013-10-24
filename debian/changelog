@@ -7,6 +7,7 @@ qtquickcontrols-opensource-src (5.1.1-2) UNRELEASED; urgency=low
       qtdeclarative5-controls-plugin.
     - Add proper Breaks+Replaces to qtdeclarative5-controls-plugin.
     - Rename .install and .lintian-override files.
+    - Make qtdeclarative5-quicklayouts-plugin depend on the new package.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Oct 2013 19:08:42 -0300
 
