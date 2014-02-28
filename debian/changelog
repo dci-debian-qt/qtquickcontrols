@@ -1,4 +1,4 @@
-qtquickcontrols-opensource-src (5.2.1-2) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.2.1-2) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
   * Build the documentation packages.
@@ -7,7 +7,7 @@ qtquickcontrols-opensource-src (5.2.1-2) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Remove rule to compress packages with xz, it's now the default.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 27 Feb 2014 16:23:30 +0400
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 27 Feb 2014 23:48:39 -0300
 
 qtquickcontrols-opensource-src (5.2.1-1) experimental; urgency=medium
 
