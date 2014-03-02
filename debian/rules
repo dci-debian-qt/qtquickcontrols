@@ -16,7 +16,10 @@ override_dh_auto_clean:
 	rm -rf doc src/controls/controls.qrc
 
 override_dh_auto_configure:
-	qmake
+	qmake QT_BUILD_PARTS+=tests
+
+override_dh_auto_test:
+	xvfb-run -a dh_auto_test -- QT_PLUGIN_PATH=$(CURDIR)/plugins
 
 override_dh_auto_build-indep:
 	dh_auto_build -Smakefile -- docs
