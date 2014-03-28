@@ -26,8 +26,8 @@ Multi-Arch: same
 Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
 Depends: libqt5qml5,
          qtdeclarative5-quicklayouts-plugin (= ${binary:Version}),
-         qtdeclarative5-window-plugin
- ${misc:Depends},
+         qtdeclarative5-window-plugin,
+         ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libqt5qml-quickcontrols (<< 5.1.1-2~)
 Replaces: libqt5qml-quickcontrols (<< 5.1.1-2~)
