@@ -1,5 +1,9 @@
 qtquickcontrols-opensource-src (5.2.1-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Add qtdeclarative5-window-plugin as a qtdeclarative5-controls-plugin
+    dependency.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Mar 2014 14:32:00 -0300
 
 qtquickcontrols-opensource-src (5.2.1-3) unstable; urgency=medium
