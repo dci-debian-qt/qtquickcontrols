@@ -37,6 +37,7 @@ Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
 Depends: libqt5qml5,
          qml-module-qtquick-layouts (= ${binary:Version}),
          qml-module-qtquick-window2,
+         qml-module-qtquick2,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libqt5qml-quickcontrols (<< 5.1.1-2~),

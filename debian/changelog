@@ -6,6 +6,7 @@ qtquickcontrols-opensource-src (5.2.1-4) UNRELEASED; urgency=medium
   * Rename QML packages with proper Break+Replaces and files renaming:
     - qtdeclarative5-controls-plugin → qml-module-qtquick-controls.
     - qtdeclarative5-quicklayouts-plugin → qml-module-qtquick-layouts.
+  * Add qml-module-qtquick2 as a qml-module-qtquick-controls dependency.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Mar 2014 14:32:00 -0300
 
