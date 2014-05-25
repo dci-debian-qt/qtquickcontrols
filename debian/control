@@ -89,6 +89,19 @@ Description: Qt 5 Quick Layouts QML module
  The Qt Quick Layouts modules provides a set of layouts that can be used to
  build complete interfaces in Qt Quick.
 
+Package: qml-module-qtquick-privatewidgets
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: qtdeclarative5-privatewidgets-plugin (<< 5.2.1-5~)
+Replaces: qtdeclarative5-privatewidgets-plugin (<< 5.2.1-5~)
+Description: Qt 5 Private Widgets QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains the Private Widgets module.
+
 Package: qtquickcontrols5-doc
 Priority: extra
 Architecture: all
