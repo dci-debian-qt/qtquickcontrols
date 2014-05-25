@@ -7,6 +7,7 @@ qtquickcontrols-opensource-src (5.3.0-1) UNRELEASED; urgency=medium
     packages, moved here from qtdeclarative-opensource-src.
   * Add indep build-dependencies on qtbase5-doc-html and
     qtdeclarative5-doc-html, needed by the docs.
+  * Add new qtquickcontrols5-examples package, install examples.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 May 2014 13:54:50 +0400
 
