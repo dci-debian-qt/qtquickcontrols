@@ -5,6 +5,8 @@ qtquickcontrols-opensource-src (5.3.0-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies.
   * Add qml-module-qtquick-dialogs and qml-module-qtquick-privatewidgets
     packages, moved here from qtdeclarative-opensource-src.
+  * Add indep build-dependencies on qtbase5-doc and qtdeclarative5-doc,
+    needed by the docs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 May 2014 13:54:50 +0400
 
