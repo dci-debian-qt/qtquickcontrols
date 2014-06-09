@@ -22,16 +22,6 @@ Homepage: http://qt-project.org/
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtquickcontrols.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtquickcontrols.git
 
-Package: qtdeclarative5-controls-plugin
-Architecture: all
-Section: oldlibs
-Depends: qml-module-qtquick-controls, ${misc:Depends}
-Description: transitional dummy package for Qt 5 Quick Controls QML module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a transitional dummy package which can be safely removed.
-
 Package: qml-module-qtquick-controls
 Architecture: any
 Multi-Arch: same
@@ -65,17 +55,6 @@ Description: Qt 5 Dialogs QML module
  is its rich set of widgets that provide standard GUI functionality.
  .
  This package provides various dialogs that can be used in Qt Quick.
-
-Package: qtdeclarative5-quicklayouts-plugin
-Section: oldlibs
-Architecture: all
-Depends: qml-module-qtquick-layouts, ${misc:Depends}
-Description: transitional dummy package for Qt 5 Quick Layouts QML module
- Qt is a cross-platform C++ application framework. Qt's primary feature
- is its rich set of widgets that provide standard GUI functionality.
- .
- This is a transitional dummy package for qml-module-qtquick-layouts
- which can be safely removed.
 
 Package: qml-module-qtquick-layouts
 Section: libdevel
