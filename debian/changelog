@@ -1,10 +1,9 @@
-qtquickcontrols-opensource-src (5.3.2-1) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.3.2-1) experimental; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * New upstream release.
   * Bump Qt build dependencies.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Sep 2014 18:06:41 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 18 Sep 2014 18:12:38 -0300
 
 qtquickcontrols-opensource-src (5.3.1-1) unstable; urgency=medium
 
