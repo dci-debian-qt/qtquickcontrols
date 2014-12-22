@@ -5,6 +5,7 @@ qtquickcontrols-opensource-src (5.4.0-1) UNRELEASED; urgency=medium
   * Bump Qt build-dependencies to 5.4.0.
   * Update debian/copyright.
   * Update Vcs-Browser field to point to cgit interface.
+  * Add myself to Uploaders.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 22 Dec 2014 15:14:01 +0300
 
