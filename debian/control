@@ -91,6 +91,9 @@ Section: x11
 Pre-Depends: ${misc:Pre-Depends}
 Depends: qml-module-qtquick-controls,
          qml-module-qtquick-dialogs,
+         qml-module-qtquick-layouts,
+         qml-module-qtquick-privatewidgets,
+         qml-module-qttest,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: qtdeclarative5-examples (<< 5.3.0~)
