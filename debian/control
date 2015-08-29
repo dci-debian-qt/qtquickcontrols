@@ -42,6 +42,23 @@ Description: Qt 5 Quick Controls QML module
  The Qt Quick Controls module provides a set of controls that can be used to
  build complete interfaces in Qt Quick.
 
+Package: qml-module-qtquick-extras
+Architecture: any
+Multi-Arch: same
+Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
+Depends: libqt5qml5,
+         qml-module-qtquick-layouts (= ${binary:Version}),
+         qml-module-qtquick-window2,
+         qml-module-qtquick2,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Qt 5 Quick Extras QML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The Qt Quick Extras module provides a set of extra components that can be
+ used to build complete interfaces in Qt Quick.
+
 Package: qml-module-qtquick-dialogs
 Architecture: any
 Multi-Arch: same
