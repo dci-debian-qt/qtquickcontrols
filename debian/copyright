@@ -15,7 +15,7 @@ Copyright: 2007-2012 Fathi Boudra <fabo@debian.org>
            2012-2013 Timo Jyrinki <timo.jyrinki@canonical.com>
            2013-2014 Dmitry Shachnev <mitya57@debian.org>
            2013-2014 Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
-License: LGPL-3 or GPL-2
+License: LGPL-2.1
 
 Files: examples/*
        tests/*.qml
@@ -94,6 +94,19 @@ License: Apache-2.0
  .
  On Debian systems, the full text of Apache License, Version 2.0 can
  be found in /usr/share/common-licenses/Apache-2.0.
+
+License: LGPL-2.1
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License, version 2.1
+ as published by the Free Software Foundation.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the full text of GNU Lesser General Public License,
+ version 2.1 can be found in /usr/share/common-licenses/LGPL-2.1.
 
 License: LGPL-3
  This program is free software: you can redistribute it and/or modify
