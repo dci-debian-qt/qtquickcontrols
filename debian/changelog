@@ -5,6 +5,7 @@ qtquickcontrols-opensource-src (5.5.1-1) UNRELEASED; urgency=medium
 
   [ Timo Jyrinki ]
   * New upstream release. 
+  * Bump build dependencies.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Oct 2015 10:41:15 +0000
 
