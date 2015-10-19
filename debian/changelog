@@ -1,4 +1,4 @@
-qtquickcontrols-opensource-src (5.5.1-0ubuntu1) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.5.1-1ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
   * Merge with Debian, remaining changes:
@@ -6,12 +6,16 @@ qtquickcontrols-opensource-src (5.5.1-0ubuntu1) UNRELEASED; urgency=medium
 
  -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Fri, 27 Mar 2015 06:48:43 +0000
 
-qtquickcontrols-opensource-src (5.5.0-2) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.5.1-1) experimental; urgency=medium
 
   [ Dmitry Shachnev ]
   * Minor debian/copyright fixes.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 30 Aug 2015 20:16:22 +0300
+  [ Timo Jyrinki ]
+  * New upstream release. 
+  * Bump build dependencies.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Mon, 19 Oct 2015 10:42:58 +0000
 
 qtquickcontrols-opensource-src (5.5.0-1) experimental; urgency=medium
 
