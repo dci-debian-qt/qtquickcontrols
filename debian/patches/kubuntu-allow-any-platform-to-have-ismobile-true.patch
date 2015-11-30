@@ -1,0 +1,52 @@
+From 560fa0b9ec9ac0af53baf717ff83a51f1cd0762b Mon Sep 17 00:00:00 2001
+From: Marco Martin <mart@kde.org>
+Date: Fri, 17 Jul 2015 10:59:15 +0200
+Subject: [PATCH] Allow any platform to have isMobile true
+
+don't hardcode the isMobile property of the controls settings.
+Allow other platforms such as plain Linux or Windows to behave as full
+mobile controls using the QT_QUICK_CONTROLS_MOBILE environmant variable
+
+[ChangeLog][QtQuick.Controls] introducing QT_QUICK_CONTROLS_MOBILE
+makes possible for normal Linux systems to have QtQuickControls
+behaving as a mobile platform
+
+Change-Id: I4c96104334864855e9cf0a8f71125102f178b423
+Reviewed-by: Gabriel de Dietrich <gabriel.dedietrich@theqtcompany.com>
+---
+ src/controls/Private/qquickcontrolsettings.cpp     | 3 +++
+ src/controls/doc/src/qtquickcontrols-overview.qdoc | 4 ++++
+ 2 files changed, 7 insertions(+)
+
+diff --git a/src/controls/Private/qquickcontrolsettings.cpp b/src/controls/Private/qquickcontrolsettings.cpp
+index faebdaa..7e6393a 100644
+--- a/src/controls/Private/qquickcontrolsettings.cpp
++++ b/src/controls/Private/qquickcontrolsettings.cpp
+@@ -97,6 +97,9 @@ bool QQuickControlSettings::isMobile() const
+ #if defined(Q_OS_IOS) || defined(Q_OS_ANDROID) || defined(Q_OS_BLACKBERRY) || defined(Q_OS_QNX) || defined(Q_OS_WINRT)
+     return true;
+ #else
++    if (qEnvironmentVariableIsSet("QT_QUICK_CONTROLS_MOBILE")) {
++        return true;
++    }
+     return false;
+ #endif
+ }
+diff --git a/src/controls/doc/src/qtquickcontrols-overview.qdoc b/src/controls/doc/src/qtquickcontrols-overview.qdoc
+index 45a4557..f549d0c 100644
+--- a/src/controls/doc/src/qtquickcontrols-overview.qdoc
++++ b/src/controls/doc/src/qtquickcontrols-overview.qdoc
+@@ -126,6 +126,10 @@
+     forgotten. This is a known limitation and a workaround is to add potentially missing imports in
+     one of the qml files of the application using the controls.
+ 
++    \section2 Testing Desktop and Mobile behavior of the controls
++    You can test how the controls on your application or style will behave on
++    a mobile platform by setting the environment variable \e QT_QUICK_CONTROLS_MOBILE, to force a behavior optimized for mobile devices.
++
+     \section1 Related information
+ 
+      \list
+-- 
+2.6.2
+

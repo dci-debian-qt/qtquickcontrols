@@ -1,3 +1,9 @@
+qtquickcontrols-opensource-src (5.5.1-2+mci1) UNRELEASED; urgency=medium
+
+  * Patches for mobile
+
+ -- Bhushan Shah <bshah@kde.org>  Mon, 30 Nov 2015 20:44:42 +0530
+
 qtquickcontrols-opensource-src (5.5.1-2) unstable; urgency=medium
 
   * Upload to unstable.
