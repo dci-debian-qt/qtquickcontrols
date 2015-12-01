@@ -1,2 +1,3 @@
 kubuntu-allow-any-platform-to-have-ismobile-true.patch
 kubuntu-allow-for-styles-to-provide-own-editmenu.patch
+kubuntu_fix-display-of-text-handlers.patch

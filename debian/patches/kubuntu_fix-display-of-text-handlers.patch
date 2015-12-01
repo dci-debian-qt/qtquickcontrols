@@ -1,0 +1,61 @@
+From 3660cd60e9a8f74203b2eefef23f4baa383f75c3 Mon Sep 17 00:00:00 2001
+From: Aleix Pol <aleixpol@kde.org>
+Date: Mon, 2 Nov 2015 16:01:56 +0100
+Subject: [PATCH] Fix display of text handlers
+
+The mappedPos property used has a different coordinates system. We need
+to adapt to it before comparing values.
+Otherwise it depends on the editor position whether the handles will be
+shown.
+
+Change-Id: I497ce497b02931e05194bea0de9ece10b29a316d
+Reviewed-by: Frederik Gladhorn <frederik.gladhorn@theqtcompany.com>
+Reviewed-by: Marco Martin <mart@kde.org>
+Reviewed-by: J-P Nurmi <jpnurmi@theqtcompany.com>
+---
+ src/controls/Private/TextInputWithHandles.qml | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+diff --git a/src/controls/Private/TextInputWithHandles.qml b/src/controls/Private/TextInputWithHandles.qml
+index 42e7fde..b1ea9a5 100644
+--- a/src/controls/Private/TextInputWithHandles.qml
++++ b/src/controls/Private/TextInputWithHandles.qml
+@@ -144,13 +144,15 @@ TextInput {
+         active: control.selectByMouse && Settings.isMobile
+         maximum: cursorHandle.position - 1
+ 
++        readonly property var mappedOrigin: editor.mapToItem(parent, 0,0)
++
+         // Mention scenePos in the mappedPos binding to force re-evaluation if it changes
+-        property var mappedPos: listener.scenePos.x !== listener.scenePos.y !== Number.MAX_VALUE ?
++        readonly property var mappedPos: listener.scenePos.x !== listener.scenePos.y !== Number.MAX_VALUE ?
+                                     editor.mapToItem(parent, editor.selectionRectangle.x, editor.selectionRectangle.y) : -1
+         x: mappedPos.x
+         y: mappedPos.y
+ 
+-        visible: pressed || (input.hasSelection && handleX + handleWidth >= -1 && handleX <= control.width + 1)
++        visible: pressed || (input.hasSelection && handleX + handleWidth >= -1 && handleX - mappedOrigin.x <= control.width + 1)
+ 
+         onPositionChanged: {
+             if (!input.blockRecursion) {
+@@ -173,13 +175,15 @@ TextInput {
+         active: control.selectByMouse && Settings.isMobile
+         minimum: input.hasSelection ? selectionHandle.position + 1 : -1
+ 
++        readonly property var mappedOrigin: editor.mapToItem(parent, 0,0)
++
+         // Mention scenePos in the mappedPos binding to force re-evaluation if it changes
+-        property var mappedPos: listener.scenePos.x !== listener.scenePos.y !== Number.MAX_VALUE ?
++        readonly property var mappedPos: listener.scenePos.x !== listener.scenePos.y !== Number.MAX_VALUE ?
+                                     editor.mapToItem(parent, editor.cursorRectangle.x, editor.cursorRectangle.y) : -1
+         x: mappedPos.x
+         y: mappedPos.y
+ 
+-        visible: pressed || ((input.cursorVisible || input.hasSelection) && handleX + handleWidth >= -1 && handleX <= control.width + 1)
++        visible: pressed || ((input.cursorVisible || input.hasSelection) && handleX + handleWidth >= -1 && handleX - mappedOrigin.x <= control.width + 1)
+ 
+         onPositionChanged: {
+             if (!input.blockRecursion) {
+-- 
+2.6.2
+
