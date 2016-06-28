@@ -1,5 +1,9 @@
 qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
 
+  [ Harald Sitter ]
+  * New upstream release.
+  * Remove package qml-module-qtquick-layouts (moved to qtdeclarative)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jun 2016 14:43:47 +0200
 
 qtquickcontrols-opensource-src (5.6.1-2) unstable; urgency=medium
