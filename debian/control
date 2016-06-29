@@ -24,7 +24,7 @@ Package: qml-module-qtquick-controls
 Architecture: any
 Multi-Arch: same
 Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
-Depends: qml-module-qtquick-layouts (= ${binary:Version}),
+Depends: qml-module-qtquick-layouts,
          qml-module-qtquick-window2,
          qml-module-qtquick2,
          ${misc:Depends},
@@ -44,7 +44,7 @@ Package: qml-module-qtquick-extras
 Architecture: any
 Multi-Arch: same
 Pre-Depends: dpkg (>= 1.15.6~), ${misc:Pre-Depends}
-Depends: qml-module-qtquick-layouts (= ${binary:Version}),
+Depends: qml-module-qtquick-layouts,
          qml-module-qtquick-window2,
          qml-module-qtquick2,
          ${misc:Depends},
@@ -89,7 +89,6 @@ Section: x11
 Pre-Depends: ${misc:Pre-Depends}
 Depends: qml-module-qtquick-controls,
          qml-module-qtquick-dialogs,
-         qml-module-qtquick-layouts,
          qml-module-qtquick-privatewidgets,
          qml-module-qttest,
          ${misc:Depends},
