@@ -3,6 +3,8 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 export CFLAGS := $(shell dpkg-buildflags --get CFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
 export CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS) $(shell dpkg-buildflags --get CPPFLAGS)
 export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
@@ -23,6 +25,11 @@ override_dh_auto_build-indep:
 
 override_dh_auto_install-indep:
 	make INSTALL_ROOT=$(CURDIR)/debian/tmp install_docs
+
+override_dh_auto_install-arch:
+	dh_auto_install
+	# Dashboard example is patched to use packaged DejaVu Sans font
+	rm -rfv debian/tmp/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/examples/quickcontrols/extras/dashboard/fonts/
 
 override_dh_auto_test-indep:
 
