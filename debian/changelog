@@ -11,6 +11,7 @@ qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
   * Update debian/copyright.
   * Bump Qt build-dependencies to 5.7.0.
   * Drop obsolete Breaks/Replaces.
+  * Make the examples package depend on qml-module-qtquick-extras.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jun 2016 14:43:47 +0200
 
