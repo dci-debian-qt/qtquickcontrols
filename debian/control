@@ -83,8 +83,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: fonts-dejavu-core,
          qml-module-qtquick-controls,
          qml-module-qtquick-dialogs,
-         qml-module-qtquick-privatewidgets,
          qml-module-qtquick-extras,
+         qml-module-qtquick-privatewidgets,
          qml-module-qttest,
          ${misc:Depends},
          ${shlibs:Depends}
