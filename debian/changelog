@@ -9,6 +9,7 @@ qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Update debian/copyright.
+  * Bump Qt build-dependencies to 5.7.0.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jun 2016 14:43:47 +0200
 
