@@ -29,10 +29,6 @@ Depends: qml-module-qtquick-layouts,
          qml-module-qtquick2,
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: libqt5qml-quickcontrols (<< 5.1.1-2~),
-        qtdeclarative5-controls-plugin (<< 5.2.1-4~)
-Replaces: libqt5qml-quickcontrols (<< 5.1.1-2~),
-          qtdeclarative5-controls-plugin (<< 5.2.1-4~)
 Description: Qt 5 Quick Controls QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -61,8 +57,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: qml-module-qtquick-privatewidgets, ${misc:Depends}, ${shlibs:Depends}
-Breaks: qtdeclarative5-dialogs-plugin (<< 5.2.1-5~)
-Replaces: qtdeclarative5-dialogs-plugin (<< 5.2.1-5~)
 Description: Qt 5 Dialogs QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -74,8 +68,6 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: qtdeclarative5-privatewidgets-plugin (<< 5.2.1-5~)
-Replaces: qtdeclarative5-privatewidgets-plugin (<< 5.2.1-5~)
 Description: Qt 5 Private Widgets QML module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -93,8 +85,6 @@ Depends: qml-module-qtquick-controls,
          qml-module-qttest,
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: qtdeclarative5-examples (<< 5.3.0~)
-Replaces: qtdeclarative5-examples (<< 5.3.0~)
 Description: Qt 5 Quick Controls examples
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -106,8 +96,6 @@ Priority: extra
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Breaks: qtdeclarative5-doc (<< 5.3.0~)
-Replaces: qtdeclarative5-doc (<< 5.3.0~)
 Description: Qt 5 Quick Controls documentation
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -120,8 +108,6 @@ Priority: extra
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
-Breaks: qtdeclarative5-doc-html (<< 5.3.0~)
-Replaces: qtdeclarative5-doc-html (<< 5.3.0~)
 Description: Qt 5 Quick Controls HTML documentation
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
