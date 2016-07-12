@@ -15,6 +15,9 @@ qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
   * Make qml-module-qtquick-controls depend on qml-module-qtgraphicaleffects.
   * Add a patch to make the Dashboard example use packaged DejaVu Sans font
     (packaged_dejavu_sans.diff).
+  * Run tests during build.
+    - Build with QT_BUILD_PARTS+=tests.
+    - Add build-dependencies on various QML modules and Xvfb.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jun 2016 14:43:47 +0200
 
