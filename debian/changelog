@@ -18,6 +18,7 @@ qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
   * Run tests during build.
     - Build with QT_BUILD_PARTS+=tests.
     - Add build-dependencies on various QML modules and Xvfb.
+    - Disable one failing test, test_windowHeight2 (skip_failing_test.diff).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jun 2016 14:43:47 +0200
 
