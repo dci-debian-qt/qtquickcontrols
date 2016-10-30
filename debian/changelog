@@ -1,3 +1,7 @@
+qtquickcontrols-opensource-src (5.7.0-3) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 30 Oct 2016 09:28:07 -0300
+
 qtquickcontrols-opensource-src (5.7.0-2) experimental; urgency=medium
 
   * Run the tests with --no-parallel, otherwise qWaitForWindowActive() does
