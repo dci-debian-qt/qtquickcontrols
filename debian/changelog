@@ -1,4 +1,33 @@
-qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.7.1~20161021-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 01 Nov 2016 15:20:08 +0300
+
+qtquickcontrols-opensource-src (5.7.1~20161021-1) experimental; urgency=medium
+
+  * New upstream snapshot.
+    - Bump Qt build dependencies.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 30 Oct 2016 09:40:00 -0300
+
+qtquickcontrols-opensource-src (5.7.0-3) experimental; urgency=medium
+
+  * Make tests non-fatal. We enabled test on the 5.7 round and discovered
+    that some of them where failing. As Dmitry Shachnev discovered this is no
+    regression from 5.6 and we need to get 5.7 into testing before the
+    transition freeze we are making them non-fatal.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 30 Oct 2016 09:36:11 -0300
+
+qtquickcontrols-opensource-src (5.7.0-2) experimental; urgency=medium
+
+  * Run the tests with --no-parallel, otherwise qWaitForWindowActive() does
+    not work.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 12 Jul 2016 23:50:19 +0300
+
+qtquickcontrols-opensource-src (5.7.0-1) experimental; urgency=medium
 
   [ Harald Sitter ]
   * New upstream release.
@@ -7,7 +36,27 @@ qtquickcontrols-opensource-src (5.7.0-1) UNRELEASED; urgency=medium
   * qml-module-qtquick-controls now depends on layouts without a version lock
   * qml-module-qtquick-extras now depends on layouts without a version lock
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 28 Jun 2016 14:43:47 +0200
+  [ Dmitry Shachnev ]
+  * Update debian/copyright.
+  * Bump Qt build-dependencies to 5.7.0.
+  * Drop obsolete Breaks/Replaces.
+  * Make the examples package depend on qml-module-qtquick-extras.
+  * Make qml-module-qtquick-controls depend on qml-module-qtgraphicaleffects.
+  * Add a patch to make the Dashboard example use packaged DejaVu Sans font
+    (packaged_dejavu_sans.diff).
+  * Run tests during build.
+    - Build with QT_BUILD_PARTS+=tests.
+    - Add build-dependencies on various QML modules and Xvfb.
+    - Disable one failing test, test_windowHeight2 (skip_failing_test.diff).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 12 Jul 2016 17:07:08 +0300
+
+qtquickcontrols-opensource-src (5.6.1-3) unstable; urgency=medium
+
+  * Backport fix_crash_on_exit.patch to solve a crash that affects among
+    others, kscreenlocker.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 20 Sep 2016 09:54:50 -0300
 
 qtquickcontrols-opensource-src (5.7.0-0neon) xenial; urgency=medium
 
