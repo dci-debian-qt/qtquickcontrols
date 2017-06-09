@@ -1,8 +1,10 @@
-qtquickcontrols-opensource-src (5.7.1-0neon) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.9.0-1) experimental; urgency=medium
 
-  * neon build
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.0.
+  * Add support for nodoc build profile.
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 25 Jan 2017 14:36:53 +0000
+ -- Dmitry Shachnev <mitya57@debian.org>  Thu, 08 Jun 2017 22:44:53 +0300
 
 qtquickcontrols-opensource-src (5.7.1~20161021-2) unstable; urgency=medium
 
