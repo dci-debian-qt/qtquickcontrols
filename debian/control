@@ -25,7 +25,7 @@ Build-Depends-Indep: libqt5sql5-sqlite (>= 5.9.1+dfsg~) <!nodoc>,
                      qtbase5-doc-html (>= 5.9.1+dfsg~) <!nodoc>,
                      qtdeclarative5-doc-html (>= 5.9.1~) <!nodoc>,
                      qttools5-dev-tools (>= 5.9.1~) <!nodoc>
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: http://qt-project.org/
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/qt/qtquickcontrols.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/qt/qtquickcontrols.git
