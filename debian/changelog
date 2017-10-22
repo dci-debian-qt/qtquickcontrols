@@ -3,6 +3,7 @@ qtquickcontrols-opensource-src (5.9.2-1) UNRELEASED; urgency=medium
   [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.9.2.
+  * Use dh_qmlcdeps to get proper dependencies for .qmlc files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Oct 2017 23:21:38 +0300
 
