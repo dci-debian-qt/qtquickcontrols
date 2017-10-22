@@ -1,3 +1,10 @@
+qtquickcontrols-opensource-src (5.9.2-1) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Oct 2017 23:21:38 +0300
+
 qtquickcontrols-opensource-src (5.9.1-2) unstable; urgency=medium
 
   * Release to unstable.
