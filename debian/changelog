@@ -1,6 +1,5 @@
-qtquickcontrols-opensource-src (5.9.2-1) UNRELEASED; urgency=medium
+qtquickcontrols-opensource-src (5.9.2-1) experimental; urgency=medium
 
-  [ Dmitry Shachnev ]
   * New upstream release.
   * Bump Qt build-dependencies to 5.9.2.
   * Use dh_qmlcdeps to get proper dependencies for .qmlc files.
@@ -8,7 +7,7 @@ qtquickcontrols-opensource-src (5.9.2-1) UNRELEASED; urgency=medium
   * Stop using deprecated Priority: extra.
   * Bump Standards-Version to 4.1.1.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 22 Oct 2017 23:21:38 +0300
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 23 Oct 2017 12:30:31 +0300
 
 qtquickcontrols-opensource-src (5.9.1-2) unstable; urgency=medium
 
