@@ -13,6 +13,39 @@ qtquickcontrols-opensource-src (5.9.3-0neon) UNRELEASED; urgency=medium
 
  -- Jonathan Riddell <jr@jriddell.org>  Wed, 22 Nov 2017 17:23:10 +0000
 
+qtquickcontrols-opensource-src (5.9.2-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 27 Oct 2017 11:16:53 +0300
+
+qtquickcontrols-opensource-src (5.9.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.2.
+  * Use dh_qmlcdeps to get proper dependencies for .qmlc files.
+  * Use debhelper compat level 10 and dh_missing.
+  * Stop using deprecated Priority: extra.
+  * Bump Standards-Version to 4.1.1.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 23 Oct 2017 12:30:31 +0300
+
+qtquickcontrols-opensource-src (5.9.1-2) unstable; urgency=medium
+
+  * Release to unstable.
+
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 16 Aug 2017 14:00:15 -0300
+
+qtquickcontrols-opensource-src (5.9.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Qt build-dependencies to 5.9.1.
+  * Add build-dependency on qtdeclarative5-dev-tools, to get QML cache
+    files generated.
+  * Bump Standards-Version to 4.0.0, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 03 Jul 2017 16:24:38 +0300
+
 qtquickcontrols-opensource-src (5.9.0-1) experimental; urgency=medium
 
   * New upstream release.
